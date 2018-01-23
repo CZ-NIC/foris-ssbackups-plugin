@@ -43,7 +43,7 @@ class SsbackupsPluginConfigHandler(BaseConfigHandler):
 
         def form_cb(data):
             res = current_state.backend.perform(
-                "ssbackups", "create_and_upload",
+                "ssbackups", "set_password",
                 {"password": base64.b64encode(data["password"])}
             )
             return "save_result", res  # store {"result": ...} to be used later...
@@ -65,6 +65,8 @@ class SsbackupsPluginPage(ConfigPageMixin, SsbackupsPluginConfigHandler):
         args['PLUGIN_STATIC_SCRIPTS'] = SsbackupsPlugin.PLUGIN_STATIC_SCRIPTS
         args['PLUGIN_DYNAMIC_SCRIPTS'] = SsbackupsPlugin.PLUGIN_DYNAMIC_SCRIPTS
         args['backups'] = []  # will be rendered later using js
+        args['password_ready'] = \
+            current_state.backend.perform("ssbackups", "password_ready")["result"] == "passed"
 
     def render(self, **kwargs):
         self._prepare_render_args(kwargs)
@@ -94,11 +96,9 @@ class SsbackupsPluginPage(ConfigPageMixin, SsbackupsPluginConfigHandler):
             raise bottle.HTTPError(400, "%s is missing." % name)
 
     def _action_create_and_upload(self):
-        password = self._get_post_item("password")
         bottle.response.set_header("Content-Type", "application/json")
         return current_state.backend.perform(
             "ssbackups", "create_and_upload",
-            {"password": base64.b64encode(password)}
         )
 
     def _action_delete(self):

@@ -25,11 +25,21 @@ Foris.overrideCreateBackup = function () {
       url: '{{ url("config_ajax", page_name="ssbackups") }}',
       data: data,
       success: function(data, text, xhr) {
-        // clean form
-        $("#field-password").val("").attr("class", "");
-        $("#field-password_validation").val("").attr("class", "");
-        // TODO display some nice message
-        // Data is reload by WS
+        if (xhr.status == 200) {
+          // Data are reload by WS just display some message here
+          // TODO display some nice message
+          alert(data.result);
+          switch (data.result) {
+            case "passed":
+              break;
+            case "gpg_error":
+              break;
+            case "connection_error":
+              break;
+          }
+        } else {
+          // TODO error message
+        }
       },
       error: function(jqXHR, textStatu, errorThrown) {
         // TODO render error
@@ -50,8 +60,17 @@ Foris.overrideDelete = function () {
       success: function(data, text, xhr) {
         if (xhr.status == 200) {
           // TODO display some nice message
+          alert(data.result);
+          switch (data.result) {
+            case "passed":
+              break;
+            case "not_found":
+              break;
+            case "connection_error":
+              break;
+          }
         } else {
-          // TODO display some nice message
+          // TODO error message
         }
       },
       error: function(jqXHR, textStatu, errorThrown) {
@@ -74,8 +93,17 @@ Foris.overrideSetOnDemand = function () {
       success: function(data, text, xhr) {
         if (xhr.status == 200) {
           // TODO display some nice message
+          alert(data.result);
+          switch (data.result) {
+            case "passed":
+              break;
+            case "not_found":
+              break;
+            case "connection_error":
+              break;
+          }
         } else {
-          // TODO display some nice message
+          // TODO error message
         }
       },
       error: function(jqXHR, textStatu, errorThrown) {
@@ -100,14 +128,20 @@ Foris.overrideDownloadAndRestore = function () {
       data: data,
       success: function(data, text, xhr) {
         if (xhr.status == 200) {
-          if (data.result) {
-              // Do nothing page will be reloaded via WS
-          } else {
-              // TODO display error
-              alert("KO");
+          // TODO display some nice message
+          alert(data.result);
+          switch (data.result) {
+            case "passed":
+              break;
+            case "not_found":
+              break;
+            case "gpg_error":
+              break;
+            case "connection_error":
+              break;
           }
         } else {
-          // TODO display error
+          // TODO error message
         }
       },
       error: function(jqXHR, textStatu, errorThrown) {
