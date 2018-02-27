@@ -3,11 +3,11 @@
 <div id="page-ssbackups-plugin" class="config-page">
     %include("_messages.tpl")
 
-    <p>{{ trans("Server side backups allows user to store...") }}</p>
-    <p>{{ trans("Password description") }}</p>
-    <p>{{ trans("Ssbackups frequency") }}</p>
+    <p>{{ trans("Server side backups allow you to store the router's configuration on a remote server.") }}</p>
+    <p>{{ trans("The password you set is submitted every time a backup is used. The password isn't stored anywhere and it is not renewable, so in case of a forgotten password, you will not be able access backups and will have to delete and reinstall the package. ") }}</p>
+    <p>{{ trans("Server side backups are created automatically every night as well as manually. The service stores up to seven backups, additional backups are gradually overwritten unless the user selects Keep. Once the backup is kept, it will remain stored on a remote server until deleted. ") }}</p>
     %if not password_ready:
-    <div class="message warning">{{ trans("In order to create remote backups you need to set the password first.") }}</div>
+    <div class="message warning">{{ trans("In order to create remote backups, you first need to set the password.") }}</div>
     %end
     <form action="{{ request.fullpath }}" method="post" class="config-form">
       <input type="hidden" name="csrf_token" value="{{ get_csrf_token() }}">
