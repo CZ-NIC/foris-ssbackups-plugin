@@ -2,6 +2,8 @@
 
 <div id="page-ssbackups-plugin" class="config-page">
     %include("_messages.tpl")
+    <div class="message success" id="ssbackup-success" style="display: none"></div>
+    <div class="message error" id="ssbackup-error" style="display: none"></div>
 
     <p>{{ trans("Server side backups allow you to store the router's configuration on a remote server.") }}</p>
     <p>{{ trans("The password you set is submitted every time a backup is used. The password isn't stored anywhere and it is not renewable, so in case of a forgotten password, you will not be able access backups and will have to delete and reinstall the package. ") }}</p>

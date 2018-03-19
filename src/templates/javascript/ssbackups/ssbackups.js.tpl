@@ -1,3 +1,22 @@
+Foris.ssbackupsHideMsg = function(element) {
+    if ($(element).is(":visible")) {
+        $(element).hide("fast")
+    }
+    $(element).text("");
+};
+
+Foris.ssbackupsShowMsg = function(element, error) {
+    if ($(element).is(":visible")) {
+        $(element).hide("fast")
+        $(element).text(error);
+        $(element).show("fast");
+    } else {
+        $(element).text(error);
+        $(element).show("slow");
+    }
+};
+
+
 Foris.download_backups = function(new_array, changed_array, delete_array) {
   $("#ssbackups-no-backups").text('{{ trans("Loading backup list...") }}');
   $.get('{{ url("config_ajax", page_name="ssbackups") }}', {action: "list"})
@@ -8,8 +27,10 @@ Foris.download_backups = function(new_array, changed_array, delete_array) {
         Foris.overrideDelete();
         Foris.overrideSetOnDemand();
         Foris.overrideDownloadAndRestore();
+        Foris.ssbackupsHideMsg("#ssbackup-error");
       } else {
-        // TODO Error message
+        Foris.ssbackupsHideMsg("#ssbackup-success");
+        Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to download the backup list.') }}");
       }
     })
 };
@@ -27,22 +48,28 @@ Foris.overrideCreateBackup = function () {
       success: function(data, text, xhr) {
         if (xhr.status == 200) {
           // Data are reload by WS just display some message here
-          // TODO display some nice message
-          alert(data.result);
           switch (data.result) {
             case "passed":
+                Foris.ssbackupsHideMsg("#ssbackup-error");
+                Foris.ssbackupsShowMsg("#ssbackup-success", "{{ trans('The backup was successfully created.') }}");
               break;
             case "gpg_error":
+                Foris.ssbackupsHideMsg("#ssbackup-success");
+                Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to encrypt the backup.') }}");
               break;
             case "connection_error":
+                Foris.ssbackupsHideMsg("#ssbackup-success");
+                Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to connect to the ssbackup server.') }}");
               break;
           }
         } else {
-          // TODO error message
+          Foris.ssbackupsHideMsg("#ssbackup-success");
+          Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to create a backup.') }}");
         }
       },
       error: function(jqXHR, textStatu, errorThrown) {
-        // TODO render error
+        Foris.ssbackupsHideMsg("#ssbackup-success");
+        Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to create a backup.') }}");
       }
     });
   });
@@ -59,22 +86,28 @@ Foris.overrideDelete = function () {
       data: data,
       success: function(data, text, xhr) {
         if (xhr.status == 200) {
-          // TODO display some nice message
-          alert(data.result);
           switch (data.result) {
             case "passed":
+                Foris.ssbackupsHideMsg("#ssbackup-error");
+                Foris.ssbackupsShowMsg("#ssbackup-success", "{{ trans('The backup was successfully deleted.') }}");
               break;
             case "not_found":
+                Foris.ssbackupsHideMsg("#ssbackup-success");
+                Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('The backup was not found.') }}");
               break;
             case "connection_error":
+                Foris.ssbackupsHideMsg("#ssbackup-success");
+                Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to connect to the ssbackup server.') }}");
               break;
           }
         } else {
-          // TODO error message
+          Foris.ssbackupsHideMsg("#ssbackup-success");
+          Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to delete the backup.') }}");
         }
       },
       error: function(jqXHR, textStatu, errorThrown) {
-        // TODO render error
+        Foris.ssbackupsHideMsg("#ssbackup-success");
+        Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to delete the backup.') }}");
       }
     });
   });
@@ -92,22 +125,28 @@ Foris.overrideSetOnDemand = function () {
       data: data,
       success: function(data, text, xhr) {
         if (xhr.status == 200) {
-          // TODO display some nice message
-          alert(data.result);
           switch (data.result) {
             case "passed":
+                Foris.ssbackupsHideMsg("#ssbackup-error");
+                Foris.ssbackupsShowMsg("#ssbackup-success", "{{ trans('The backup was successfully marked to keep.') }}");
               break;
             case "not_found":
+                Foris.ssbackupsHideMsg("#ssbackup-success");
+                Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('The backup was not found.') }}");
               break;
             case "connection_error":
+                Foris.ssbackupsHideMsg("#ssbackup-success");
+                Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to connect to the ssbackup server.') }}");
               break;
           }
         } else {
-          // TODO error message
+          Foris.ssbackupsHideMsg("#ssbackup-success");
+          Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to keep the backup.') }}");
         }
       },
       error: function(jqXHR, textStatu, errorThrown) {
-        // TODO render error
+        Foris.ssbackupsHideMsg("#ssbackup-success");
+        Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to keep the backup.') }}");
       }
     });
   });
@@ -128,24 +167,32 @@ Foris.overrideDownloadAndRestore = function () {
       data: data,
       success: function(data, text, xhr) {
         if (xhr.status == 200) {
-          // TODO display some nice message
-          alert(data.result);
           switch (data.result) {
             case "passed":
+                Foris.ssbackupsHideMsg("#ssbackup-error");
+                Foris.ssbackupsShowMsg("#ssbackup-success", "{{ trans('The backup was successfully restored.') }}");
               break;
             case "not_found":
+                Foris.ssbackupsHideMsg("#ssbackup-success");
+                Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('The backup was not found.') }}");
               break;
             case "gpg_error":
+                Foris.ssbackupsHideMsg("#ssbackup-success");
+                Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to decrypt the backup.') }}");
               break;
             case "connection_error":
+                Foris.ssbackupsHideMsg("#ssbackup-success");
+                Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to connect to the ssbackup server.') }}");
               break;
           }
         } else {
-          // TODO error message
+          Foris.ssbackupsHideMsg("#ssbackup-success");
+          Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to restore the backup.') }}");
         }
       },
       error: function(jqXHR, textStatu, errorThrown) {
-        // TODO render error
+        Foris.ssbackupsHideMsg("#ssbackup-success");
+        Foris.ssbackupsShowMsg("#ssbackup-error", "{{ trans('Failed to restore the backup.') }}");
       }
     });
   });
