@@ -228,13 +228,26 @@ Foris.overrideDownloadAndRestore = function () {
       }
     });
   });
-  $('#ssbackups-table-form .inline-password').on("keypress", function(e) {
-    // override enter
-    if (e.keyCode == 13) {
-        e.preventDefault();
-        $(this).parent().find("button[name='download-and-restore']").click();
-    };
-  });
+  $('#ssbackups-table-form .inline-password')
+    .on("keypress", function(e) {
+      // override enter
+      switch(e.key) {
+        case "Enter":
+          e.preventDefault();
+          $(this).parent().find("button[name='download-and-restore']").click();
+          break;
+        case "Escape":
+          $(this).hide("slow")
+          $(this).parent().find("button[name='set-on-demand']").show("slow");
+          $(this).parent().find("button[name='delete']").show("slow");
+          break;
+      }
+    })
+    .focusout(function(e) {
+          $(this).hide("slow")
+          $(this).parent().find("button[name='set-on-demand']").show("slow");
+          $(this).parent().find("button[name='delete']").show("slow");
+    });
 };
 
 Foris.WS["ssbackups"] = function(msg) {
