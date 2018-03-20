@@ -9,8 +9,6 @@
                 <th>{{ trans("Date") }}</th>
                 <th>{{ trans("Keep") }}</th>
                 <th></th>
-                <th></th>
-                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -20,19 +18,14 @@
                 <td>{{ record["created"] }}</td>
                 <td>{{ record["on_demand"] }}</td>
                 <td>
-                    <button name="download-and-restore" value="{{ record["id"] }}" type="submit">
+                    <input style="display: none" id="password-{{ record["id"] }}" name="password-{{ record["id"] }}" type="password" class="inline-password">
+                    <button name="download-and-restore" value="{{ record["id"] }}" type="submit" id="restore-{{ record["id"] }}">
                         {{ trans("Restore") }}
                     </button>
-                </td>
-                <td>
-        %if not record["on_demand"]:
-                    <button name="set-on-demand" value="{{ record["id"] }}" type="submit">
+                    <button name="set-on-demand" value="{{ record["id"] }}" style="visibility: {{ "hidden" if record["on_demand"] else "visible"  }}" type="submit" id="keep-{{ record["id"] }}">
                         {{ trans("Keep") }}
                     </button>
-        %end
-                </td>
-                <td>
-                    <button name="delete" value="{{ record["id"] }}" type="submit">
+                    <button name="delete" value="{{ record["id"] }}" type="submit" id="delete-{{ record["id"] }}">
                         {{ trans("Delete") }}
                     </button>
                 </td>

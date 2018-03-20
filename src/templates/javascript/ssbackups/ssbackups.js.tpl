@@ -177,9 +177,20 @@ Foris.overrideSetOnDemand = function () {
 Foris.overrideDownloadAndRestore = function () {
   $('#ssbackups-table-form button[name="download-and-restore"]').click(function (event) {
     event.preventDefault();
-    // TODO implement a propper password prompt using javascript
-    var password = window.prompt("{{ trans('Enter password for backup:') }}")
     var id = $(this).val();
+    if (!$("#password-" + id).is(":visible")) {
+      $("#keep-" + id).hide("slow");
+      $("#delete-" + id).hide("slow");
+      $("#password-" + id).show("slow");
+      $("#password-" + id).focus();
+      return;
+    } else {
+      var password = $("#password-" + id).val();
+      $("#password-" + id).val("");
+      $("#keep-" + id).show("slow");
+      $("#delete-" + id).show("slow");
+      $("#password-" + id).hide("slow");
+    }
     var data = $(this).parents("form:first").serialize();
     data += "&action=download_and_restore&id=" + id + "&password=" + password;
     $.ajax({
@@ -217,6 +228,13 @@ Foris.overrideDownloadAndRestore = function () {
       }
     });
   });
+  $('#ssbackups-table-form .inline-password').on("keypress", function(e) {
+    // override enter
+    if (e.keyCode == 13) {
+        e.preventDefault();
+        $(this).parent().find("button[name='download-and-restore']").click();
+    };
+  });
 };
 
 Foris.WS["ssbackups"] = function(msg) {
@@ -231,7 +249,7 @@ Foris.WS["ssbackups"] = function(msg) {
         Foris.download_backups([], [msg.data.id], []);
         break;
       case "download_and_restore":
-        location.reload();
+        // TODO highlight restored backup somehow...
         break;
     }
 };
