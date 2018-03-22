@@ -16,7 +16,7 @@
             <tr id="backup-{{ record["id"] }}">
                 <td>{{ record["name"] }}</td>
                 <td>{{ record["created"] }}</td>
-                <td>{{ record["on_demand"] }}</td>
+                <td>{{ trans("Yes") if record["on_demand"] else trans("No") }}</td>
                 <td>
                     <input style="display: none" id="password-{{ record["id"] }}" name="password-{{ record["id"] }}" type="password" class="inline-password">
                     <button name="download-and-restore" value="{{ record["id"] }}" type="submit" id="restore-{{ record["id"] }}">
