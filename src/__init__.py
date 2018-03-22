@@ -22,7 +22,7 @@ from foris.utils.translators import gettext_dummy as gettext, ugettext as _
 
 
 class SsbackupsPluginConfigHandler(BaseConfigHandler):
-    userfriendly_title = gettext("Server Side Backups")
+    userfriendly_title = gettext("Cloud Backups")
 
     def get_form(self):
         form = fapi.ForisForm("create_and_upload", self.data)
