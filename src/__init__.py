@@ -75,7 +75,10 @@ class SsbackupsPluginPage(ConfigPageMixin, SsbackupsPluginConfigHandler):
     def _prepare_list_data(self, data):
         for record in data:
             parsed = datetime.strptime(record["created"], "%Y-%m-%dT%H:%M:%S.%fZ")
-            record["created"] = parsed.strftime("%Y-%m-%d %H:%M:%S")
+            # parsed is in utc we need to convert it to localtime
+            timestamp = (parsed - datetime(1970, 1, 1)).total_seconds()  # convert to timestamp
+            parsed_local = datetime.fromtimestamp(timestamp)  # convert to local datetime
+            record["created"] = parsed_local.strftime("%Y-%m-%d %H:%M:%S")
         data.sort(key=lambda x: x["id"])
         return data
 
