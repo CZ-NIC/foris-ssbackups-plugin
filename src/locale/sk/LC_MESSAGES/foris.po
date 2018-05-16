@@ -8,81 +8,86 @@ msgstr ""
 "Project-Id-Version: Foris SSbackups\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-27 12:08+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2018-05-17 13:43+0000\n"
+"Last-Translator: Vladimír Záhradník <vladimir.zahradnik@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
+"foris-serversidebackups-plugin/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0-dev\n"
 
 msgid "Loading backup list..."
-msgstr ""
+msgstr "Načíta sa zoznam záloh…"
 
 msgid "Failed to download the list of  backups."
-msgstr ""
+msgstr "Nepodarilo sa prevziať zoznam záloh."
 
 msgid "A backup was successfully created."
-msgstr ""
+msgstr "Záloha bola úspešne vytvorená."
 
 msgid "Failed to encrypt the backup."
-msgstr ""
+msgstr "Zálohu sa nepodarilo zašifrovať."
 
 msgid "Failed to connect to the ssbackup server."
-msgstr ""
+msgstr "Nepodarilo sa spojiť so ssbackup serverom."
 
 msgid "Failed to create a backup."
-msgstr ""
+msgstr "Nepodarilo sa vytvoriť zálohu."
 
 msgid "The backup was successfully deleted."
-msgstr ""
+msgstr "Záloha bola úspešne vymazaná."
 
 msgid "The backup was not found."
-msgstr ""
+msgstr "Záloha nebola nájdená."
 
 msgid "Failed to delete the backup."
-msgstr ""
+msgstr "Zálohu sa nepodarilo vymazať."
 
 msgid "The backup was successfully marked to keep."
-msgstr ""
+msgstr "Záloha bola úspešne označená na ponechanie."
 
 msgid "Failed to keep the backup."
-msgstr ""
+msgstr "Nepodarilo sa ponechať zálohu."
 
 msgid "The backup was successfully restored."
-msgstr ""
+msgstr "Úspešne obnovené zo zálohy."
 
 msgid "Failed to decrypt the backup. You probably inserted a wrong password."
 msgstr ""
+"Zálohu sa nepodarilo rozšifrovať. Pravdepodobne ste zadali nesprávne heslo."
 
 msgid "Failed to restore the backup."
-msgstr ""
+msgstr "Nepodarilo sa obnoviť zo zálohy."
 
 msgid "Name"
-msgstr ""
+msgstr "Názov"
 
 msgid "Date"
-msgstr ""
+msgstr "Dátum"
 
 msgid "Keep"
-msgstr ""
+msgstr "Ponechať"
 
 msgid "Yes"
-msgstr ""
+msgstr "Áno"
 
 msgid "Restore"
-msgstr ""
+msgstr "Obnoviť"
 
 msgid "Delete"
-msgstr ""
+msgstr "Vymazať"
 
 msgid "No remote backups found."
-msgstr ""
+msgstr "Na vzdialenom serveri sa nenašli žiadne zálohy."
 
 msgid ""
 "Cloud backups allow you to store the router's configuration on a remote "
 "server."
 msgstr ""
+"Cloudové zálohy umožňujú uchovávať zálohu nastavení na vzdialenom serveri."
 
 msgid ""
 "The password you set is submitted every time a backup is used. The password "
@@ -90,12 +95,17 @@ msgid ""
 "password, you will not be able access backups and will have to delete and "
 "reinstall the package. "
 msgstr ""
+"Heslo, ktoré nastavíte, je poskytnuté pri každom vytvorení zálohy. Nie je "
+"nikde uložené a nedá sa obnoviť. Takže v prípade straty hesla nebude možné "
+"obnovenie zo zálohy a bude potrebné balíček zmazať a znovu nainštalovať. "
 
 msgid "In order to create remote backups, you first need to set the password."
 msgstr ""
+"Aby bolo možné vytvárať zálohy na vzdialený server, je potrebné najskôr "
+"nastaviť heslo."
 
 msgid "Set password"
-msgstr ""
+msgstr "Nastaviť heslo"
 
 msgid ""
 "Cloud backups are created automatically every night as well as manually. The "
@@ -103,6 +113,10 @@ msgid ""
 "overwritten unless the user selects Keep. Once the backup is kept, it will "
 "remain stored on a remote server until deleted. "
 msgstr ""
+"Zálohy do cloudu sa vytvárajú automaticky každú noc (prípadne na vyžiadanie)"
+". Služba uchováva sedem záloh, staršie zálohy sú postupne prepisované ("
+"pokiaľ nie sú označené na ponechanie). Akonáhle je záloha takto označená, "
+"zostane uložená na vzdialenom serveri až pokiaľ ju nezmažete. "
 
 #, python-format
 msgid ""
@@ -110,21 +124,24 @@ msgid ""
 "the <a href='%(project_url)s'>Project Turris portal</a>. You can do that on "
 "the <a href='%(data_collect_url)s'>Data Collect tab</a>. "
 msgstr ""
+"Aby bolo možné používať zálohy do cloudu, je potrebné sa zaregistrovať na <a "
+"href='%(project_url)s'>portáli projektu Turris</a>. To je možné spraviť na <"
+"a href='%(data_collect_url)s'>paneli Zhromažďovanie dát</a>. "
 
 msgid "Remote backups"
-msgstr ""
+msgstr "Zálohy na vzdialený server"
 
 msgid "Create"
-msgstr ""
+msgstr "Vytvoriť"
 
 msgid "Cloud Backups"
-msgstr ""
+msgstr "Cloudové zálohy"
 
 msgid "Password"
-msgstr ""
+msgstr "Heslo"
 
 msgid "Password (repeat)"
-msgstr ""
+msgstr "Heslo (pre kontrolu)"
 
 msgid "Passwords are not equal."
-msgstr ""
+msgstr "Zadané heslá sa nezhodujú."
