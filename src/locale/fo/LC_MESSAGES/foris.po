@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Foris SSbackups package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Foris SSbackups\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-27 12:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Loading backup list..."
+msgstr ""
+
+msgid "Failed to download the list of  backups."
+msgstr ""
+
+msgid "A backup was successfully created."
+msgstr ""
+
+msgid "Failed to encrypt the backup."
+msgstr ""
+
+msgid "Failed to connect to the ssbackup server."
+msgstr ""
+
+msgid "Failed to create a backup."
+msgstr ""
+
+msgid "The backup was successfully deleted."
+msgstr ""
+
+msgid "The backup was not found."
+msgstr ""
+
+msgid "Failed to delete the backup."
+msgstr ""
+
+msgid "The backup was successfully marked to keep."
+msgstr ""
+
+msgid "Failed to keep the backup."
+msgstr ""
+
+msgid "The backup was successfully restored."
+msgstr ""
+
+msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgstr ""
+
+msgid "Failed to restore the backup."
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Keep"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "Restore"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "No remote backups found."
+msgstr ""
+
+msgid ""
+"Cloud backups allow you to store the router's configuration on a remote "
+"server."
+msgstr ""
+
+msgid ""
+"The password you set is submitted every time a backup is used. The password "
+"isn't stored anywhere and it is not renewable, so in case of a forgotten "
+"password, you will not be able access backups and will have to delete and "
+"reinstall the package. "
+msgstr ""
+
+msgid "In order to create remote backups, you first need to set the password."
+msgstr ""
+
+msgid "Set password"
+msgstr ""
+
+msgid ""
+"Cloud backups are created automatically every night as well as manually. The "
+"service stores up to seven backups, additional backups are gradually "
+"overwritten unless the user selects Keep. Once the backup is kept, it will "
+"remain stored on a remote server until deleted. "
+msgstr ""
+
+#, python-format
+msgid ""
+"To be able to use cloud backups, please make sure that you are registered at "
+"the <a href='%(project_url)s'>Project Turris portal</a>. You can do that on "
+"the <a href='%(data_collect_url)s'>Data Collect tab</a>. "
+msgstr ""
+
+msgid "Remote backups"
+msgstr ""
+
+msgid "Create"
+msgstr ""
+
+msgid "Cloud Backups"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Password (repeat)"
+msgstr ""
+
+msgid "Passwords are not equal."
+msgstr ""
