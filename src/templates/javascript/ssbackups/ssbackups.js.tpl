@@ -31,6 +31,7 @@ Foris.ssbackupsMessages = {
     backupRestored: "{{ trans('The backup was successfully restored.') }}",
     failedToDecrypt: "{{ trans('Failed to decrypt the backup. You probably inserted a wrong password.') }}",
     failedToRestore: "{{ trans('Failed to restore the backup.') }}",
+    failedToCreateMaxFileSize: "{{ trans('Failed to create backup because of max file size reached.') }}"
 }
 
 
@@ -77,6 +78,10 @@ Foris.overrideCreateBackup = function () {
             case "gpg_error":
                 Foris.ssbackupsHideMsg("#ssbackup-success");
                 Foris.ssbackupsShowMsg("#ssbackup-error", Foris.ssbackupsMessages.failedToEncrypt);
+              break;
+            case "max_file_size_error":
+                Foris.ssbackupsHideMsg("#ssbackup-success");
+                Foris.ssbackupsShowMsg("#ssbackup-error", Foris.ssbackupsMessages.failedToCreateMaxFileSize);
               break;
             case "connection_error":
                 Foris.ssbackupsHideMsg("#ssbackup-success");
