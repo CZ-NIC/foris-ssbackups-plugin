@@ -20,7 +20,7 @@
     <p>{{ trans("Cloud backups are created automatically every night as well as manually. The service stores up to seven backups, additional backups are gradually overwritten unless the user selects Keep. Once the backup is kept, it will remain stored on a remote server until deleted. ") }}</p>
     <div class="message warning">
       {{! trans("To be able to use cloud backups, please make sure that you are registered at the <a href='%(project_url)s'>Project Turris portal</a>. You can do that on the <a href='%(data_collect_url)s'>Data Collect tab</a>. ") % dict(project_url="https://project.turris.cz", data_collect_url=url("config_page", page_name="data-collection")) }}
-      {{trans("(Note that you don't need to enable data collection after the registration.)") }}
+      ({{trans("Note that you don't need to enable data collection after the registration.") }})
     </div>
     <h3>{{ trans("Remote backups") }}</h3>
     %include("ssbackups/_backups.tpl", backups=backups)
