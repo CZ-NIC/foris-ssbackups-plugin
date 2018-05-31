@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the Foris SSbackups package.
+# This file is distributed under the same license as the Foris SSBackups plugin package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Foris SSbackups\n"
+"Project-Id-Version: Foris SSBackups plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-27 12:08+0200\n"
+"POT-Creation-Date: 2018-05-31 09:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,6 +59,9 @@ msgstr ""
 msgid "Failed to restore the backup."
 msgstr ""
 
+msgid "Failed to create backup because of max file size reached."
+msgstr ""
+
 msgid "Name"
 msgstr ""
 
@@ -69,6 +72,9 @@ msgid "Keep"
 msgstr ""
 
 msgid "Yes"
+msgstr ""
+
+msgid "No"
 msgstr ""
 
 msgid "Restore"
