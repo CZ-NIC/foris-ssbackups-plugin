@@ -21,6 +21,11 @@ from foris.state import current_state
 from foris.utils.translators import gettext_dummy as gettext, ugettext as _
 
 
+EXTRA_TRANSLATIONS = [
+    _('Creating an automatic Cloud Backup from your router failed.'),
+]
+
+
 class SsbackupsPluginConfigHandler(BaseConfigHandler):
     userfriendly_title = gettext("Cloud Backups")
 
