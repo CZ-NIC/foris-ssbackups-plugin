@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Foris SSbackups\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-01 11:18+0200\n"
-"PO-Revision-Date: 2018-05-24 11:09+0000\n"
+"PO-Revision-Date: 2018-06-12 19:41+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
 "foris-serversidebackups-plugin/nb/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #, fuzzy
 msgid "Loading backup list..."
@@ -74,6 +74,7 @@ msgstr "Klarte ikke å gjenopprette sikkerhetskopi."
 
 msgid "Failed to create backup because of max file size reached."
 msgstr ""
+"Klarte ikke å opprette sikkerhetskopi fordi maksimal filstørrelse ble nådd."
 
 msgid "Name"
 msgstr "Navn"
@@ -88,7 +89,7 @@ msgid "Yes"
 msgstr "Ja"
 
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 msgid "Restore"
 msgstr "Gjenopprett"
@@ -151,7 +152,7 @@ msgstr ""
 
 msgid ""
 "Note that you don't need to enable data collection after the registration."
-msgstr ""
+msgstr "Merk at du ikke trenger å skru på datainnsamling etter registreringen."
 
 msgid "Remote backups"
 msgstr "Sikkerhetskopier annensteds hen"
