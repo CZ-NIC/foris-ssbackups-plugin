@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Foris SSbackups\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-01 11:18+0200\n"
+"POT-Creation-Date: 2018-06-19 14:16+0200\n"
 "PO-Revision-Date: 2018-06-12 19:41+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
@@ -19,62 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#, fuzzy
-msgid "Loading backup list..."
-msgstr "Laster opp sikkerhetskopiliste…"
-
-msgid "Failed to download the list of  backups."
-msgstr "Klarte ikke å laste ned liste over sikkerhetskopier."
-
-msgid "A backup was successfully created."
-msgstr "En sikkerhetskopi ble opprettet."
-
-msgid "Failed to encrypt the backup."
-msgstr "Klarte ikke å kryptere sikkerhetskopien."
-
-#, fuzzy
-msgid "Failed to connect to the ssbackup server."
-msgstr "Klarte ikke å koble til sikkerhetskopitjeneren."
-
-#, fuzzy
-msgid "Failed to create a backup."
-msgstr "Klarte ikke å opprette sikkerhetskopi."
-
-#, fuzzy
-msgid "The backup was successfully deleted."
-msgstr "Sikkerhetskopi slettet."
-
-msgid "The backup was not found."
-msgstr "Fant ikke sikkerhetskopien."
-
-#, fuzzy
-msgid "Failed to delete the backup."
-msgstr "Klarte ikke å slette sikkerhetskopi."
-
-msgid "The backup was successfully marked to keep."
-msgstr "Sikkerhetskopien ble markert for bevaring."
-
-#, fuzzy
-msgid "Failed to keep the backup."
-msgstr "Klarte ikke å beholde sikkerhetskopi."
-
-#, fuzzy
-msgid "The backup was successfully restored."
-msgstr "Sikkerhetskopi gjenopprettet."
-
-#, fuzzy
-msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgid "Creating an automatic Cloud Backup from your router failed."
 msgstr ""
-"Klarte ikke å dekryptere sikkerhetskopi. Du har antagelig skrevet inn galt "
-"passord."
 
-#, fuzzy
-msgid "Failed to restore the backup."
-msgstr "Klarte ikke å gjenopprette sikkerhetskopi."
+msgid "Cloud Backups"
+msgstr "Skysikkerhetskopier"
 
-msgid "Failed to create backup because of max file size reached."
-msgstr ""
-"Klarte ikke å opprette sikkerhetskopi fordi maksimal filstørrelse ble nådd."
+msgid "Password"
+msgstr "Passord"
+
+msgid "Password (repeat)"
+msgstr "Passord (gjenta)"
+
+msgid "Passwords are not equal."
+msgstr "Passordene samsvarer ikke."
 
 msgid "Name"
 msgstr "Navn"
@@ -160,14 +118,62 @@ msgstr "Sikkerhetskopier annensteds hen"
 msgid "Create"
 msgstr "Opprett"
 
-msgid "Cloud Backups"
-msgstr "Skysikkerhetskopier"
+#, fuzzy
+msgid "Loading backup list..."
+msgstr "Laster opp sikkerhetskopiliste…"
 
-msgid "Password"
-msgstr "Passord"
+msgid "Failed to download the list of  backups."
+msgstr "Klarte ikke å laste ned liste over sikkerhetskopier."
 
-msgid "Password (repeat)"
-msgstr "Passord (gjenta)"
+msgid "A backup was successfully created."
+msgstr "En sikkerhetskopi ble opprettet."
 
-msgid "Passwords are not equal."
-msgstr "Passordene samsvarer ikke."
+msgid "Failed to encrypt the backup."
+msgstr "Klarte ikke å kryptere sikkerhetskopien."
+
+#, fuzzy
+msgid "Failed to connect to the ssbackup server."
+msgstr "Klarte ikke å koble til sikkerhetskopitjeneren."
+
+#, fuzzy
+msgid "Failed to create a backup."
+msgstr "Klarte ikke å opprette sikkerhetskopi."
+
+#, fuzzy
+msgid "The backup was successfully deleted."
+msgstr "Sikkerhetskopi slettet."
+
+msgid "The backup was not found."
+msgstr "Fant ikke sikkerhetskopien."
+
+#, fuzzy
+msgid "Failed to delete the backup."
+msgstr "Klarte ikke å slette sikkerhetskopi."
+
+msgid "The backup was successfully marked to keep."
+msgstr "Sikkerhetskopien ble markert for bevaring."
+
+#, fuzzy
+msgid "Failed to keep the backup."
+msgstr "Klarte ikke å beholde sikkerhetskopi."
+
+#, fuzzy
+msgid "The backup was successfully restored."
+msgstr "Sikkerhetskopi gjenopprettet."
+
+#, fuzzy
+msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgstr ""
+"Klarte ikke å dekryptere sikkerhetskopi. Du har antagelig skrevet inn galt "
+"passord."
+
+#, fuzzy
+msgid "Failed to restore the backup."
+msgstr "Klarte ikke å gjenopprette sikkerhetskopi."
+
+msgid "Failed to create backup because of max file size reached."
+msgstr ""
+"Klarte ikke å opprette sikkerhetskopi fordi maksimal filstørrelse ble nådd."
+
+msgid "The password to encrypt the backup is not set, although it is required."
+msgstr ""

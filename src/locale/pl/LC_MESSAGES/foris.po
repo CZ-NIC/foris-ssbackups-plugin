@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Foris SSbackups\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-01 11:18+0200\n"
+"POT-Creation-Date: 2018-06-19 14:16+0200\n"
 "PO-Revision-Date: 2018-06-01 11:47+0000\n"
 "Last-Translator: Krzysztof Kulesza <github@cmza.pl>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/turris/"
-"foris-serversidebackups-plugin/pl/>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/turris/foris-"
+"serversidebackups-plugin/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,53 +20,20 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0\n"
 
-msgid "Loading backup list..."
-msgstr "Ładowanie listy kopii zapasowych..."
-
-msgid "Failed to download the list of  backups."
-msgstr "Nie można pobrać listy kopii zapasowych."
-
-msgid "A backup was successfully created."
-msgstr "Kopia zapasowa została pomyślnie utworzona."
-
-msgid "Failed to encrypt the backup."
-msgstr "Nie udało się zaszyfrować kopii zapasowej."
-
-msgid "Failed to connect to the ssbackup server."
-msgstr "Nie można połączyć się z serwerem ssbackup."
-
-msgid "Failed to create a backup."
-msgstr "Nie udało się utworzyć kopii zapasowej."
-
-msgid "The backup was successfully deleted."
-msgstr "Kopia zapasowa została pomyślnie usunięta."
-
-msgid "The backup was not found."
-msgstr "Nie znaleziono kopii zapasowej."
-
-msgid "Failed to delete the backup."
-msgstr "Nie udało się usunąć kopii zapasowej."
-
-msgid "The backup was successfully marked to keep."
-msgstr "Kopia zapasowa została pomyślnie oznaczona do zachowania."
-
-msgid "Failed to keep the backup."
-msgstr "Nie udało się zachować kopii zapasowej."
-
-msgid "The backup was successfully restored."
-msgstr "Kopia zapasowa została pomyślnie przywrócona."
-
-msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgid "Creating an automatic Cloud Backup from your router failed."
 msgstr ""
-"Nie udało się odszyfrować kopii zapasowej. Prawdopodobnie podałeś złe hasło."
 
-msgid "Failed to restore the backup."
-msgstr "Nie udało się przywrócić kopii zapasowej."
+msgid "Cloud Backups"
+msgstr "Kopie zapasowe"
 
-msgid "Failed to create backup because of max file size reached."
-msgstr ""
-"Nie udało się utworzyć kopii zapasowej z powodu osiągnięcia maksymalnego "
-"rozmiaru pliku."
+msgid "Password"
+msgstr "Hasło"
+
+msgid "Password (repeat)"
+msgstr "Hasło (powtórzenie)"
+
+msgid "Passwords are not equal."
+msgstr "Hasła nie są takie same."
 
 msgid "Name"
 msgstr "Nazwa"
@@ -148,14 +115,53 @@ msgstr "Zdalne kopie zapasowe"
 msgid "Create"
 msgstr "Utwórz"
 
-msgid "Cloud Backups"
-msgstr "Kopie zapasowe"
+msgid "Loading backup list..."
+msgstr "Ładowanie listy kopii zapasowych..."
 
-msgid "Password"
-msgstr "Hasło"
+msgid "Failed to download the list of  backups."
+msgstr "Nie można pobrać listy kopii zapasowych."
 
-msgid "Password (repeat)"
-msgstr "Hasło (powtórzenie)"
+msgid "A backup was successfully created."
+msgstr "Kopia zapasowa została pomyślnie utworzona."
 
-msgid "Passwords are not equal."
-msgstr "Hasła nie są takie same."
+msgid "Failed to encrypt the backup."
+msgstr "Nie udało się zaszyfrować kopii zapasowej."
+
+msgid "Failed to connect to the ssbackup server."
+msgstr "Nie można połączyć się z serwerem ssbackup."
+
+msgid "Failed to create a backup."
+msgstr "Nie udało się utworzyć kopii zapasowej."
+
+msgid "The backup was successfully deleted."
+msgstr "Kopia zapasowa została pomyślnie usunięta."
+
+msgid "The backup was not found."
+msgstr "Nie znaleziono kopii zapasowej."
+
+msgid "Failed to delete the backup."
+msgstr "Nie udało się usunąć kopii zapasowej."
+
+msgid "The backup was successfully marked to keep."
+msgstr "Kopia zapasowa została pomyślnie oznaczona do zachowania."
+
+msgid "Failed to keep the backup."
+msgstr "Nie udało się zachować kopii zapasowej."
+
+msgid "The backup was successfully restored."
+msgstr "Kopia zapasowa została pomyślnie przywrócona."
+
+msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgstr ""
+"Nie udało się odszyfrować kopii zapasowej. Prawdopodobnie podałeś złe hasło."
+
+msgid "Failed to restore the backup."
+msgstr "Nie udało się przywrócić kopii zapasowej."
+
+msgid "Failed to create backup because of max file size reached."
+msgstr ""
+"Nie udało się utworzyć kopii zapasowej z powodu osiągnięcia maksymalnego "
+"rozmiaru pliku."
+
+msgid "The password to encrypt the backup is not set, although it is required."
+msgstr ""

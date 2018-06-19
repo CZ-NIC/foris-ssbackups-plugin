@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Foris SSbackups\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-01 11:18+0200\n"
+"POT-Creation-Date: 2018-06-19 14:16+0200\n"
 "PO-Revision-Date: 2018-06-01 14:07+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
-"foris-serversidebackups-plugin/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/foris-"
+"serversidebackups-plugin/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,52 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0\n"
 
-msgid "Loading backup list..."
-msgstr "Načítání seznamu záloh…"
-
-msgid "Failed to download the list of  backups."
-msgstr "Nepodařilo se stáhnout seznam záloh."
-
-msgid "A backup was successfully created."
-msgstr "Záloha byla úspěšně pořízena."
-
-msgid "Failed to encrypt the backup."
-msgstr "Zálohu se nepodařilo zašifrovat."
-
-msgid "Failed to connect to the ssbackup server."
-msgstr "Nepodařilo se spojit s ssbackup serverem."
-
-msgid "Failed to create a backup."
-msgstr "Nepodařilo se pořídit zálohu."
-
-msgid "The backup was successfully deleted."
-msgstr "Záloha byla úspěšně smazána."
-
-msgid "The backup was not found."
-msgstr "Záloha nebyla nalezena."
-
-msgid "Failed to delete the backup."
-msgstr "Zálohu se nepodařilo smazat."
-
-msgid "The backup was successfully marked to keep."
-msgstr "Záloha byla úspěšně označena k ponechání."
-
-msgid "Failed to keep the backup."
-msgstr "Nepodařilo se ponechat zálohu."
-
-msgid "The backup was successfully restored."
-msgstr "Úspěšně obnoveno ze zálohy."
-
-msgid "Failed to decrypt the backup. You probably inserted a wrong password."
-msgstr "Zálohu se nepodařilo rozšifrovat. Nejspíš jste zadali chybné heslo."
-
-msgid "Failed to restore the backup."
-msgstr "Nepodařilo se obnovit ze zálohy."
-
-msgid "Failed to create backup because of max file size reached."
+msgid "Creating an automatic Cloud Backup from your router failed."
 msgstr ""
-"Nepodařilo se vytvořit zálohu, protože byla dosažena hranice nejvyšší "
-"umožněné velikosti souboru."
+
+msgid "Cloud Backups"
+msgstr "Cloudové zálohy"
+
+msgid "Password"
+msgstr "Heslo"
+
+msgid "Password (repeat)"
+msgstr "Heslo (pro kontrolu)"
+
+msgid "Passwords are not equal."
+msgstr "Zadání hesla se neshodují."
 
 msgid "Name"
 msgstr "Název"
@@ -144,14 +112,52 @@ msgstr "Zálohy na protějšku"
 msgid "Create"
 msgstr "Vytvořit"
 
-msgid "Cloud Backups"
-msgstr "Cloudové zálohy"
+msgid "Loading backup list..."
+msgstr "Načítání seznamu záloh…"
 
-msgid "Password"
-msgstr "Heslo"
+msgid "Failed to download the list of  backups."
+msgstr "Nepodařilo se stáhnout seznam záloh."
 
-msgid "Password (repeat)"
-msgstr "Heslo (pro kontrolu)"
+msgid "A backup was successfully created."
+msgstr "Záloha byla úspěšně pořízena."
 
-msgid "Passwords are not equal."
-msgstr "Zadání hesla se neshodují."
+msgid "Failed to encrypt the backup."
+msgstr "Zálohu se nepodařilo zašifrovat."
+
+msgid "Failed to connect to the ssbackup server."
+msgstr "Nepodařilo se spojit s ssbackup serverem."
+
+msgid "Failed to create a backup."
+msgstr "Nepodařilo se pořídit zálohu."
+
+msgid "The backup was successfully deleted."
+msgstr "Záloha byla úspěšně smazána."
+
+msgid "The backup was not found."
+msgstr "Záloha nebyla nalezena."
+
+msgid "Failed to delete the backup."
+msgstr "Zálohu se nepodařilo smazat."
+
+msgid "The backup was successfully marked to keep."
+msgstr "Záloha byla úspěšně označena k ponechání."
+
+msgid "Failed to keep the backup."
+msgstr "Nepodařilo se ponechat zálohu."
+
+msgid "The backup was successfully restored."
+msgstr "Úspěšně obnoveno ze zálohy."
+
+msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgstr "Zálohu se nepodařilo rozšifrovat. Nejspíš jste zadali chybné heslo."
+
+msgid "Failed to restore the backup."
+msgstr "Nepodařilo se obnovit ze zálohy."
+
+msgid "Failed to create backup because of max file size reached."
+msgstr ""
+"Nepodařilo se vytvořit zálohu, protože byla dosažena hranice nejvyšší "
+"umožněné velikosti souboru."
+
+msgid "The password to encrypt the backup is not set, although it is required."
+msgstr ""

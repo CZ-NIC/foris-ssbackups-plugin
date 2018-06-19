@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the Foris SSBackups plugin package.
+# This file is distributed under the same license as the Foris ServerSideBackups plugin package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Foris SSBackups plugin\n"
+"Project-Id-Version: Foris ServerSideBackups plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-01 11:18+0200\n"
+"POT-Creation-Date: 2018-06-19 14:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,49 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Loading backup list..."
+msgid "Creating an automatic Cloud Backup from your router failed."
 msgstr ""
 
-msgid "Failed to download the list of  backups."
+msgid "Cloud Backups"
 msgstr ""
 
-msgid "A backup was successfully created."
+msgid "Password"
 msgstr ""
 
-msgid "Failed to encrypt the backup."
+msgid "Password (repeat)"
 msgstr ""
 
-msgid "Failed to connect to the ssbackup server."
-msgstr ""
-
-msgid "Failed to create a backup."
-msgstr ""
-
-msgid "The backup was successfully deleted."
-msgstr ""
-
-msgid "The backup was not found."
-msgstr ""
-
-msgid "Failed to delete the backup."
-msgstr ""
-
-msgid "The backup was successfully marked to keep."
-msgstr ""
-
-msgid "Failed to keep the backup."
-msgstr ""
-
-msgid "The backup was successfully restored."
-msgstr ""
-
-msgid "Failed to decrypt the backup. You probably inserted a wrong password."
-msgstr ""
-
-msgid "Failed to restore the backup."
-msgstr ""
-
-msgid "Failed to create backup because of max file size reached."
+msgid "Passwords are not equal."
 msgstr ""
 
 msgid "Name"
@@ -128,14 +98,50 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
-msgid "Cloud Backups"
+msgid "Loading backup list..."
 msgstr ""
 
-msgid "Password"
+msgid "Failed to download the list of  backups."
 msgstr ""
 
-msgid "Password (repeat)"
+msgid "A backup was successfully created."
 msgstr ""
 
-msgid "Passwords are not equal."
+msgid "Failed to encrypt the backup."
+msgstr ""
+
+msgid "Failed to connect to the ssbackup server."
+msgstr ""
+
+msgid "Failed to create a backup."
+msgstr ""
+
+msgid "The backup was successfully deleted."
+msgstr ""
+
+msgid "The backup was not found."
+msgstr ""
+
+msgid "Failed to delete the backup."
+msgstr ""
+
+msgid "The backup was successfully marked to keep."
+msgstr ""
+
+msgid "Failed to keep the backup."
+msgstr ""
+
+msgid "The backup was successfully restored."
+msgstr ""
+
+msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgstr ""
+
+msgid "Failed to restore the backup."
+msgstr ""
+
+msgid "Failed to create backup because of max file size reached."
+msgstr ""
+
+msgid "The password to encrypt the backup is not set, although it is required."
 msgstr ""

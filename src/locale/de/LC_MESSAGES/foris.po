@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Foris SSbackups\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-01 11:18+0200\n"
+"POT-Creation-Date: 2018-06-19 14:16+0200\n"
 "PO-Revision-Date: 2018-05-12 09:38+0000\n"
 "Last-Translator: Nora Kořánová <nora.koranova@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/foris-"
@@ -19,52 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0-dev\n"
 
-msgid "Loading backup list..."
-msgstr "Backup-Liste wird geladen..."
-
-msgid "Failed to download the list of  backups."
-msgstr "Fehler beim Herunterladen der Backup-Liste."
-
-msgid "A backup was successfully created."
-msgstr "Ein Backupwurde erfolgreich erstellt."
-
-msgid "Failed to encrypt the backup."
-msgstr "Fehler beim Veschlüsseln des Backups."
-
-msgid "Failed to connect to the ssbackup server."
-msgstr "Fehler beim Verbinden mit dem Backup-Server."
-
-msgid "Failed to create a backup."
-msgstr "Fehler beim Erstellen des Backups."
-
-msgid "The backup was successfully deleted."
-msgstr "Der Backup wurde erfolgreich gelöscht."
-
-msgid "The backup was not found."
-msgstr "Backup nicht gefunden."
-
-msgid "Failed to delete the backup."
-msgstr "Löschen des Backups ist fehlgeschlagen."
-
-msgid "The backup was successfully marked to keep."
-msgstr "Der Backup wurde erfolgreich zum Speichern markiert."
-
-msgid "Failed to keep the backup."
-msgstr "Der Backup konnte nicht gespeichert werden."
-
-msgid "The backup was successfully restored."
-msgstr "Der Backup wurde erfolgreich wiederhergestellt."
-
-msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgid "Creating an automatic Cloud Backup from your router failed."
 msgstr ""
-"Fehler beim Entschlüsseln der Sicherung. Sie haben wahrscheinlich ein "
-"falsches Passwort eingegeben."
 
-msgid "Failed to restore the backup."
-msgstr "Fehler beim Wiederherstellen des Backups."
+msgid "Cloud Backups"
+msgstr "Cloud Backups"
 
-msgid "Failed to create backup because of max file size reached."
-msgstr ""
+msgid "Password"
+msgstr "Passwort"
+
+msgid "Password (repeat)"
+msgstr "Passwort wiederhollen"
+
+msgid "Passwords are not equal."
+msgstr "Passwörter sind nicht gleich."
 
 msgid "Name"
 msgstr "Name"
@@ -147,14 +115,52 @@ msgstr "Backups"
 msgid "Create"
 msgstr "Erstellen"
 
-msgid "Cloud Backups"
-msgstr "Cloud Backups"
+msgid "Loading backup list..."
+msgstr "Backup-Liste wird geladen..."
 
-msgid "Password"
-msgstr "Passwort"
+msgid "Failed to download the list of  backups."
+msgstr "Fehler beim Herunterladen der Backup-Liste."
 
-msgid "Password (repeat)"
-msgstr "Passwort wiederhollen"
+msgid "A backup was successfully created."
+msgstr "Ein Backupwurde erfolgreich erstellt."
 
-msgid "Passwords are not equal."
-msgstr "Passwörter sind nicht gleich."
+msgid "Failed to encrypt the backup."
+msgstr "Fehler beim Veschlüsseln des Backups."
+
+msgid "Failed to connect to the ssbackup server."
+msgstr "Fehler beim Verbinden mit dem Backup-Server."
+
+msgid "Failed to create a backup."
+msgstr "Fehler beim Erstellen des Backups."
+
+msgid "The backup was successfully deleted."
+msgstr "Der Backup wurde erfolgreich gelöscht."
+
+msgid "The backup was not found."
+msgstr "Backup nicht gefunden."
+
+msgid "Failed to delete the backup."
+msgstr "Löschen des Backups ist fehlgeschlagen."
+
+msgid "The backup was successfully marked to keep."
+msgstr "Der Backup wurde erfolgreich zum Speichern markiert."
+
+msgid "Failed to keep the backup."
+msgstr "Der Backup konnte nicht gespeichert werden."
+
+msgid "The backup was successfully restored."
+msgstr "Der Backup wurde erfolgreich wiederhergestellt."
+
+msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgstr ""
+"Fehler beim Entschlüsseln der Sicherung. Sie haben wahrscheinlich ein "
+"falsches Passwort eingegeben."
+
+msgid "Failed to restore the backup."
+msgstr "Fehler beim Wiederherstellen des Backups."
+
+msgid "Failed to create backup because of max file size reached."
+msgstr ""
+
+msgid "The password to encrypt the backup is not set, although it is required."
+msgstr ""

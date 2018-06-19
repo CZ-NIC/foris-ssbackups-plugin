@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Foris SSbackups\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-01 11:18+0200\n"
+"POT-Creation-Date: 2018-06-19 14:16+0200\n"
 "PO-Revision-Date: 2018-05-17 13:43+0000\n"
 "Last-Translator: Vladimír Záhradník <vladimir.zahradnik@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/turris/foris-"
@@ -19,51 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0-dev\n"
 
-msgid "Loading backup list..."
-msgstr "Načíta sa zoznam záloh…"
-
-msgid "Failed to download the list of  backups."
-msgstr "Nepodarilo sa prevziať zoznam záloh."
-
-msgid "A backup was successfully created."
-msgstr "Záloha bola úspešne vytvorená."
-
-msgid "Failed to encrypt the backup."
-msgstr "Zálohu sa nepodarilo zašifrovať."
-
-msgid "Failed to connect to the ssbackup server."
-msgstr "Nepodarilo sa spojiť so ssbackup serverom."
-
-msgid "Failed to create a backup."
-msgstr "Nepodarilo sa vytvoriť zálohu."
-
-msgid "The backup was successfully deleted."
-msgstr "Záloha bola úspešne vymazaná."
-
-msgid "The backup was not found."
-msgstr "Záloha nebola nájdená."
-
-msgid "Failed to delete the backup."
-msgstr "Zálohu sa nepodarilo vymazať."
-
-msgid "The backup was successfully marked to keep."
-msgstr "Záloha bola úspešne označená na ponechanie."
-
-msgid "Failed to keep the backup."
-msgstr "Nepodarilo sa ponechať zálohu."
-
-msgid "The backup was successfully restored."
-msgstr "Úspešne obnovené zo zálohy."
-
-msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgid "Creating an automatic Cloud Backup from your router failed."
 msgstr ""
-"Zálohu sa nepodarilo rozšifrovať. Pravdepodobne ste zadali nesprávne heslo."
 
-msgid "Failed to restore the backup."
-msgstr "Nepodarilo sa obnoviť zo zálohy."
+msgid "Cloud Backups"
+msgstr "Cloudové zálohy"
 
-msgid "Failed to create backup because of max file size reached."
-msgstr ""
+msgid "Password"
+msgstr "Heslo"
+
+msgid "Password (repeat)"
+msgstr "Heslo (pre kontrolu)"
+
+msgid "Passwords are not equal."
+msgstr "Zadané heslá sa nezhodujú."
 
 msgid "Name"
 msgstr "Názov"
@@ -144,14 +113,51 @@ msgstr "Zálohy na vzdialený server"
 msgid "Create"
 msgstr "Vytvoriť"
 
-msgid "Cloud Backups"
-msgstr "Cloudové zálohy"
+msgid "Loading backup list..."
+msgstr "Načíta sa zoznam záloh…"
 
-msgid "Password"
-msgstr "Heslo"
+msgid "Failed to download the list of  backups."
+msgstr "Nepodarilo sa prevziať zoznam záloh."
 
-msgid "Password (repeat)"
-msgstr "Heslo (pre kontrolu)"
+msgid "A backup was successfully created."
+msgstr "Záloha bola úspešne vytvorená."
 
-msgid "Passwords are not equal."
-msgstr "Zadané heslá sa nezhodujú."
+msgid "Failed to encrypt the backup."
+msgstr "Zálohu sa nepodarilo zašifrovať."
+
+msgid "Failed to connect to the ssbackup server."
+msgstr "Nepodarilo sa spojiť so ssbackup serverom."
+
+msgid "Failed to create a backup."
+msgstr "Nepodarilo sa vytvoriť zálohu."
+
+msgid "The backup was successfully deleted."
+msgstr "Záloha bola úspešne vymazaná."
+
+msgid "The backup was not found."
+msgstr "Záloha nebola nájdená."
+
+msgid "Failed to delete the backup."
+msgstr "Zálohu sa nepodarilo vymazať."
+
+msgid "The backup was successfully marked to keep."
+msgstr "Záloha bola úspešne označená na ponechanie."
+
+msgid "Failed to keep the backup."
+msgstr "Nepodarilo sa ponechať zálohu."
+
+msgid "The backup was successfully restored."
+msgstr "Úspešne obnovené zo zálohy."
+
+msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgstr ""
+"Zálohu sa nepodarilo rozšifrovať. Pravdepodobne ste zadali nesprávne heslo."
+
+msgid "Failed to restore the backup."
+msgstr "Nepodarilo sa obnoviť zo zálohy."
+
+msgid "Failed to create backup because of max file size reached."
+msgstr ""
+
+msgid "The password to encrypt the backup is not set, although it is required."
+msgstr ""

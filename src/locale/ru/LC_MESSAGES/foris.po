@@ -7,64 +7,33 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Foris SSbackups\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-01 11:18+0200\n"
+"POT-Creation-Date: 2018-06-19 14:16+0200\n"
 "PO-Revision-Date: 2018-06-04 09:38+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/turris/"
-"foris-serversidebackups-plugin/ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-"
+"serversidebackups-plugin/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0\n"
 
-msgid "Loading backup list..."
-msgstr "Загрузка списка резервных копий ..."
-
-msgid "Failed to download the list of  backups."
-msgstr "Не удалось загрузить список резервных копий."
-
-msgid "A backup was successfully created."
-msgstr "Резервная копия успешно создана."
-
-msgid "Failed to encrypt the backup."
-msgstr "Не удалось зашифровать резервную копию."
-
-msgid "Failed to connect to the ssbackup server."
-msgstr "Не удалось подключиться к серверу зашифрованных резервных копий."
-
-msgid "Failed to create a backup."
-msgstr "Не удалось создать резервную копию."
-
-msgid "The backup was successfully deleted."
-msgstr "Резервная копия успешно удалена."
-
-msgid "The backup was not found."
-msgstr "Резервная копия не найдена."
-
-msgid "Failed to delete the backup."
-msgstr "Не удалось удалить резервную копию."
-
-msgid "The backup was successfully marked to keep."
-msgstr "Резервная копия успешно сохранена."
-
-msgid "Failed to keep the backup."
-msgstr "Не удалось сохранить резервную копию."
-
-msgid "The backup was successfully restored."
-msgstr "Резервная копия успешно восстановлена."
-
-msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgid "Creating an automatic Cloud Backup from your router failed."
 msgstr ""
-"Не удалось расшифровать резервную копию. Вероятно, введён неверный пароль."
 
-msgid "Failed to restore the backup."
-msgstr "Не удалось восстановить резервную копию."
+msgid "Cloud Backups"
+msgstr "Облачные резервные копии"
 
-msgid "Failed to create backup because of max file size reached."
-msgstr "Не удалось создать резервную копию из-за максимального размера файла."
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Password (repeat)"
+msgstr "Пароль (повтор)"
+
+msgid "Passwords are not equal."
+msgstr "Пароли не совпадают."
 
 msgid "Name"
 msgstr "Имя"
@@ -149,14 +118,51 @@ msgstr "Удаленное резервное копирование"
 msgid "Create"
 msgstr "Создать"
 
-msgid "Cloud Backups"
-msgstr "Облачные резервные копии"
+msgid "Loading backup list..."
+msgstr "Загрузка списка резервных копий ..."
 
-msgid "Password"
-msgstr "Пароль"
+msgid "Failed to download the list of  backups."
+msgstr "Не удалось загрузить список резервных копий."
 
-msgid "Password (repeat)"
-msgstr "Пароль (повтор)"
+msgid "A backup was successfully created."
+msgstr "Резервная копия успешно создана."
 
-msgid "Passwords are not equal."
-msgstr "Пароли не совпадают."
+msgid "Failed to encrypt the backup."
+msgstr "Не удалось зашифровать резервную копию."
+
+msgid "Failed to connect to the ssbackup server."
+msgstr "Не удалось подключиться к серверу зашифрованных резервных копий."
+
+msgid "Failed to create a backup."
+msgstr "Не удалось создать резервную копию."
+
+msgid "The backup was successfully deleted."
+msgstr "Резервная копия успешно удалена."
+
+msgid "The backup was not found."
+msgstr "Резервная копия не найдена."
+
+msgid "Failed to delete the backup."
+msgstr "Не удалось удалить резервную копию."
+
+msgid "The backup was successfully marked to keep."
+msgstr "Резервная копия успешно сохранена."
+
+msgid "Failed to keep the backup."
+msgstr "Не удалось сохранить резервную копию."
+
+msgid "The backup was successfully restored."
+msgstr "Резервная копия успешно восстановлена."
+
+msgid "Failed to decrypt the backup. You probably inserted a wrong password."
+msgstr ""
+"Не удалось расшифровать резервную копию. Вероятно, введён неверный пароль."
+
+msgid "Failed to restore the backup."
+msgstr "Не удалось восстановить резервную копию."
+
+msgid "Failed to create backup because of max file size reached."
+msgstr "Не удалось создать резервную копию из-за максимального размера файла."
+
+msgid "The password to encrypt the backup is not set, although it is required."
+msgstr ""
