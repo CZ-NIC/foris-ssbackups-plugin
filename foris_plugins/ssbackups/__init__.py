@@ -33,7 +33,7 @@ class SsbackupsPluginConfigHandler(BaseConfigHandler):
         form = fapi.ForisForm("create_and_upload", self.data)
         section = form.add_section(
             name="passwords",
-            title=_(self.userfriendly_title),
+            title=self.userfriendly_title,
         )
         section.add_field(
             Password, name="password", label=_("Password"), required=True,
@@ -59,7 +59,8 @@ class SsbackupsPluginConfigHandler(BaseConfigHandler):
 
 class SsbackupsPluginPage(ConfigPageMixin, SsbackupsPluginConfigHandler):
     menu_order = 80
-    template = "ssbackups/ssbackups.tpl"
+    template = "ssbackups/ssbackups"
+    template_type = "jinja2"
 
     def save(self, *args, **kwargs):
         return super(SsbackupsPluginPage, self).save(*args, **kwargs)
@@ -91,8 +92,9 @@ class SsbackupsPluginPage(ConfigPageMixin, SsbackupsPluginConfigHandler):
         # this could raise an exception in this case js should render that this request failed
         data = current_state.backend.perform("ssbackups", "list")
         return bottle.template(
-            "ssbackups/_backups",
+            "ssbackups/_backups.html.j2",
             backups=self._prepare_list_data(data["backups"]),
+            template_adapter=bottle.Jinja2Template,
         )
 
     def _get_post_item(self, name):

@@ -17,22 +17,22 @@ Foris.ssbackupsShowMsg = function(element, error) {
 };
 
 Foris.ssbackupsMessages = {
-    loadingList: "{{ trans('Loading backup list...') }}",
-    failedToDownloadList: "{{ trans('Failed to download the list of  backups.') }}",
-    backupCreated: "{{ trans('A backup was successfully created.') }}",
-    failedToEncrypt: "{{ trans('Failed to encrypt the backup.') }}",
-    failedToConnect: "{{ trans('Failed to connect to the ssbackup server.') }}",
-    failedToCreateBackup: "{{ trans('Failed to create a backup.') }}",
-    backupDeleted: "{{ trans('The backup was successfully deleted.') }}",
-    backupNotFound: "{{ trans('The backup was not found.') }}",
-    failedToDelete: "{{ trans('Failed to delete the backup.') }}",
-    backupKept: "{{ trans('The backup was successfully marked to keep.') }}",
-    failedToKeep: "{{ trans('Failed to keep the backup.') }}",
-    backupRestored: "{{ trans('The backup was successfully restored.') }}",
-    failedToDecrypt: "{{ trans('Failed to decrypt the backup. You probably inserted a wrong password.') }}",
-    failedToRestore: "{{ trans('Failed to restore the backup.') }}",
-    failedToCreateMaxFileSize: "{{ trans('Failed to create backup because of max file size reached.') }}",
-    missingPassword: "{{ trans('The password to encrypt the backup is not set, although it is required.') }}"
+    loadingList: "{% trans %}Loading backup list...{% endtrans %}",
+    failedToDownloadList: "{% trans %}Failed to download the list of  backups.{% endtrans %}",
+    backupCreated: "{% trans %}A backup was successfully created.{% endtrans %}",
+    failedToEncrypt: "{% trans %}Failed to encrypt the backup.{% endtrans %}",
+    failedToConnect: "{% trans %}Failed to connect to the ssbackup server.{% endtrans %}",
+    failedToCreateBackup: "{% trans %}Failed to create a backup.{% endtrans %}",
+    backupDeleted: "{% trans %}The backup was successfully deleted.{% endtrans %}",
+    backupNotFound: "{% trans %}The backup was not found.{% endtrans %}",
+    failedToDelete: "{% trans %}Failed to delete the backup.{% endtrans %}",
+    backupKept: "{% trans %}The backup was successfully marked to keep.{% endtrans %}",
+    failedToKeep: "{% trans %}Failed to keep the backup.{% endtrans %}",
+    backupRestored: "{% trans %}The backup was successfully restored.{% endtrans %}",
+    failedToDecrypt: "{% trans %}Failed to decrypt the backup. You probably inserted a wrong password.{% endtrans %}",
+    failedToRestore: "{% trans %}Failed to restore the backup.{% endtrans %}",
+    failedToCreateMaxFileSize: "{% trans %}Failed to create backup because of max file size reached.{% endtrans %}",
+    missingPassword: "{% trans %}The password to encrypt the backup is not set, although it is required.{% endtrans %}"
 }
 
 

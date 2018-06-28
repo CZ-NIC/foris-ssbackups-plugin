@@ -1,47 +1,47 @@
 <div id="ssbackups-backups">
-    %if backups:
+  {% if backups %}
   <form method='post' class="config-form" action='{{ url("config_action", page_name="ssbackups", action="backup-action") }}' id="ssbackups-table-form">
     <input type="hidden" name="csrf_token" value="{{ get_csrf_token() }}">
     <table id="ssbackups-backups-table">
         <thead>
             <tr>
-                <th>{{ trans("Name") }}</th>
-                <th>{{ trans("Date") }}</th>
-                <th>{{ trans("Keep") }}</th>
+                <th>{% trans %}Name{% endtrans %}</th>
+                <th>{% trans %}Date{% endtrans %}</th>
+                <th>{% trans %}Keep{% endtrans %}</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
-    %for record in backups:
+    {% for record in backups %}
             <tr id="backup-{{ record["id"] }}">
                 <td>{{ record["name"] }}</td>
                 <td>{{ record["created"] }}</td>
                 <td>
-                %if record["on_demand"]:
-                    {{ trans("Yes") }}
-                %else:
-                    {{ trans("No") }}
-                %end
+      {% if record["on_demand"] %}
+                {% trans %}Yes{% endtrans %}
+      {% else %}
+                {% trans %}No{% endtrans %}
+      {% endif %}
                 </td>
                 <td>
                     <input style="display: none" id="password-{{ record["id"] }}" name="password-{{ record["id"] }}" type="password" class="inline-password">
                     <button name="download-and-restore" value="{{ record["id"] }}" type="submit" id="restore-{{ record["id"] }}">
-                        {{ trans("Restore") }}
+                        {% trans %}Restore{% endtrans %}
                     </button>
                     <button name="set-on-demand" value="{{ record["id"] }}" style="visibility: {{ "hidden" if record["on_demand"] else "visible"  }}" type="submit" id="keep-{{ record["id"] }}">
-                        {{ trans("Keep") }}
+                        {% trans %}Keep{% endtrans %}
                     </button>
                     <button name="delete" value="{{ record["id"] }}" type="submit" id="delete-{{ record["id"] }}">
-                        {{ trans("Delete") }}
+                        {% trans %}Delete{% endtrans %}
                     </button>
                 </td>
             </tr>
-    %end
+    {% endfor %}
         </tbody>
     </table>
   </form>
 
-    %else:
-  <p id="ssbackups-no-backups">{{ trans("No remote backups found.") }}</p>
-    %end
+  {% else %}
+  <p id="ssbackups-no-backups">{% trans %}No remote backups found.{% endtrans %}</p>
+  {% endif %}
 </div>
