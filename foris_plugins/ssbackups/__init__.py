@@ -18,7 +18,7 @@ from foris.config_handlers import BaseConfigHandler
 from foris.form import Password
 from foris.plugins import ForisPlugin
 from foris.state import current_state
-from foris.utils.translators import gettext_dummy as gettext, ugettext as _
+from foris.utils.translators import gettext_dummy as gettext, gettext as _
 
 
 EXTRA_TRANSLATIONS = [
@@ -49,7 +49,7 @@ class SsbackupsPluginConfigHandler(BaseConfigHandler):
         def form_cb(data):
             res = current_state.backend.perform(
                 "ssbackups", "set_password",
-                {"password": base64.b64encode(data["password"])}
+                {"password": base64.b64encode(data["password"].encode()).decode()}
             )
             return "save_result", res  # store {"result": ...} to be used later...
 
@@ -133,7 +133,7 @@ class SsbackupsPluginPage(ConfigPageMixin, SsbackupsPluginConfigHandler):
         bottle.response.set_header("Content-Type", "application/json")
         return current_state.backend.perform(
             "ssbackups", "download_and_restore",
-            {"id": int(backup_id), "password": base64.b64encode(password)}
+            {"id": int(backup_id), "password": base64.b64encode(password.encode()).decode()}
         )
 
     def call_ajax_action(self, action):
