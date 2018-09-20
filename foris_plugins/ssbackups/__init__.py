@@ -58,6 +58,7 @@ class SsbackupsPluginConfigHandler(BaseConfigHandler):
 
 
 class SsbackupsPluginPage(ConfigPageMixin, SsbackupsPluginConfigHandler):
+    slug = "ssbackups"
     menu_order = 80
     template = "ssbackups/ssbackups"
     template_type = "jinja2"
@@ -170,4 +171,4 @@ class SsbackupsPlugin(ForisPlugin):
 
     def __init__(self, app):
         super(SsbackupsPlugin, self).__init__(app)
-        add_config_page("ssbackups", SsbackupsPluginPage, top_level=True)
+        add_config_page(SsbackupsPluginPage)
