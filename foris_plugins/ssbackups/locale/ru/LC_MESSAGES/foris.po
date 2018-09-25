@@ -1,24 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the Foris SSbackups package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) 2018 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Foris SSbackups
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Foris SSbackups\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 14:16+0200\n"
+"POT-Creation-Date: 2018-09-25 17:02+0200\n"
 "PO-Revision-Date: 2018-06-20 05:17+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/turris/"
-"foris-serversidebackups-plugin/ru/>\n"
 "Language: ru\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/foris-"
+"serversidebackups-plugin/ru/>\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"Generated-By: Babel 2.6.0\n"
 
 msgid "Creating an automatic Cloud Backup from your router failed."
 msgstr ""
@@ -36,89 +37,6 @@ msgstr "Пароль (повтор)"
 
 msgid "Passwords are not equal."
 msgstr "Пароли не совпадают."
-
-msgid "Name"
-msgstr "Имя"
-
-msgid "Date"
-msgstr "Дата"
-
-msgid "Keep"
-msgstr "Хранить"
-
-msgid "Yes"
-msgstr "Да"
-
-msgid "No"
-msgstr "Нет"
-
-msgid "Restore"
-msgstr "Восстановить"
-
-msgid "Delete"
-msgstr "Удалить"
-
-msgid "No remote backups found."
-msgstr "Не найдено удаленных резервных копий."
-
-msgid ""
-"Cloud backups allow you to store the router's configuration on a remote "
-"server."
-msgstr ""
-"Облачные резервные копии позволяют сохранять конфигурацию маршрутизатора на "
-"удаленном сервере."
-
-msgid ""
-"The password you set is submitted every time a backup is used. The password "
-"isn't stored anywhere and it is not renewable, so in case of a forgotten "
-"password, you will not be able access backups and will have to delete and "
-"reinstall the package. "
-msgstr ""
-"Установленный вами пароль отправляется каждый раз, когда используется "
-"резервная копия. Пароль нигде не хранится и не может быть восстановлен, "
-"поэтому в случае забытого пароля вы не сможете получить доступ к резервным "
-"копиям и должны будете удалить и переустановить пакет. "
-
-msgid "In order to create remote backups, you first need to set the password."
-msgstr ""
-"Для создания удаленных резервных копий сначала необходимо установить пароль."
-
-msgid "Set password"
-msgstr "Установка пароля"
-
-msgid ""
-"Cloud backups are created automatically every night as well as manually. The "
-"service stores up to seven backups, additional backups are gradually "
-"overwritten unless the user selects Keep. Once the backup is kept, it will "
-"remain stored on a remote server until deleted. "
-msgstr ""
-"Облачные резервные копии создаются автоматически каждую ночь, а также "
-"вручную. Сервис хранит до семи резервных копий, дополнительные резервные "
-"копии постепенно перезаписываются, если пользователь не выбирает Хранить. "
-"Как только резервная копия будет сохранена, она останется сохраненной на "
-"удаленном сервере до удаления. "
-
-#, python-format
-msgid ""
-"To be able to use cloud backups, please make sure that you are registered at "
-"the <a href='%(project_url)s'>Project Turris portal</a>. You can do that on "
-"the <a href='%(data_collect_url)s'>Data Collect tab</a>. "
-msgstr ""
-"Чтобы иметь возможность использовать облачные резервные копии, убедитесь, "
-"что вы зарегистрированы в <a href='%(project_url)s'>Проект Turris</a>. Вы "
-"можете сделать это на вкладке <a href='%(data_collect_url)s'>Сбор данных</"
-"a>. "
-
-msgid ""
-"Note that you don't need to enable data collection after the registration."
-msgstr ""
-"Обратите внимание, что вам не нужно включать сбор данных после регистрации."
-
-msgid "Remote backups"
-msgstr "Удаленное резервное копирование"
-
-msgid "Create"
-msgstr "Создать"
 
 msgid "Loading backup list..."
 msgstr "Загрузка списка резервных копий ..."
@@ -157,8 +75,7 @@ msgid "The backup was successfully restored."
 msgstr "Резервная копия успешно восстановлена."
 
 msgid "Failed to decrypt the backup. You probably inserted a wrong password."
-msgstr ""
-"Не удалось расшифровать резервную копию. Вероятно, введён неверный пароль."
+msgstr "Не удалось расшифровать резервную копию. Вероятно, введён неверный пароль."
 
 msgid "Failed to restore the backup."
 msgstr "Не удалось восстановить резервную копию."
@@ -167,5 +84,89 @@ msgid "Failed to create backup because of max file size reached."
 msgstr "Не удалось создать резервную копию из-за максимального размера файла."
 
 msgid "The password to encrypt the backup is not set, although it is required."
+msgstr "Пароль для шифрования резервной копии не установлен, хотя это требуется."
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Keep"
+msgstr "Хранить"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Restore"
+msgstr "Восстановить"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "No remote backups found."
+msgstr "Не найдено удаленных резервных копий."
+
+msgid ""
+"Cloud backups allow you to store the router's configuration on a remote "
+"server."
 msgstr ""
-"Пароль для шифрования резервной копии не установлен, хотя это требуется."
+"Облачные резервные копии позволяют сохранять конфигурацию маршрутизатора "
+"на удаленном сервере."
+
+msgid ""
+"The password you set is submitted every time a backup is used. The "
+"password isn't stored anywhere and it is not renewable, so in case of a "
+"forgotten password, you will not be able access backups and will have to "
+"delete and reinstall the package. "
+msgstr ""
+"Установленный вами пароль отправляется каждый раз, когда используется "
+"резервная копия. Пароль нигде не хранится и не может быть восстановлен, "
+"поэтому в случае забытого пароля вы не сможете получить доступ к "
+"резервным копиям и должны будете удалить и переустановить пакет. "
+
+msgid "In order to create remote backups, you first need to set the password."
+msgstr ""
+"Для создания удаленных резервных копий сначала необходимо установить "
+"пароль."
+
+msgid "Set password"
+msgstr "Установка пароля"
+
+msgid ""
+"Cloud backups are created automatically every night as well as manually. "
+"The service stores up to seven backups, additional backups are gradually "
+"overwritten unless the user selects Keep. Once the backup is kept, it "
+"will remain stored on a remote server until deleted. "
+msgstr ""
+"Облачные резервные копии создаются автоматически каждую ночь, а также "
+"вручную. Сервис хранит до семи резервных копий, дополнительные резервные "
+"копии постепенно перезаписываются, если пользователь не выбирает Хранить."
+" Как только резервная копия будет сохранена, она останется сохраненной на"
+" удаленном сервере до удаления. "
+
+#, fuzzy, python-format
+msgid ""
+"To be able to use cloud backups, please make sure that you are registered"
+" at the <a href='%(project_url)s'>Project Turris portal</a>. You can do "
+"that on the <a href='%(data_collect_url)s'>Data Collect tab</a>."
+msgstr ""
+"Чтобы иметь возможность использовать облачные резервные копии, убедитесь,"
+" что вы зарегистрированы в <a href='%(project_url)s'>Проект Turris</a>. "
+"Вы можете сделать это на вкладке <a href='%(data_collect_url)s'>Сбор "
+"данных</a>. "
+
+msgid "Note that you don't need to enable data collection after the registration."
+msgstr ""
+"Обратите внимание, что вам не нужно включать сбор данных после "
+"регистрации."
+
+msgid "Remote backups"
+msgstr "Удаленное резервное копирование"
+
+msgid "Create"
+msgstr "Создать"
+

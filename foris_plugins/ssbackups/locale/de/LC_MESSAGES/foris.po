@@ -1,23 +1,24 @@
 # German translations for Foris package.
 # Copyright (C) 2018 THE Foris'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the Foris SSbackups package.
+# This file is distributed under the same license as the Foris SSbackups
+# package.
 # Automatically generated, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Foris SSbackups\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 14:16+0200\n"
+"POT-Creation-Date: 2018-09-25 17:02+0200\n"
 "PO-Revision-Date: 2018-05-12 09:38+0000\n"
 "Last-Translator: Nora Kořánová <nora.koranova@gmail.com>\n"
+"Language: de\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/foris-"
 "serversidebackups-plugin/de/>\n"
-"Language: de\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"Generated-By: Babel 2.6.0\n"
 
 msgid "Creating an automatic Cloud Backup from your router failed."
 msgstr ""
@@ -33,87 +34,6 @@ msgstr "Passwort wiederhollen"
 
 msgid "Passwords are not equal."
 msgstr "Passwörter sind nicht gleich."
-
-msgid "Name"
-msgstr "Name"
-
-msgid "Date"
-msgstr "Datum"
-
-msgid "Keep"
-msgstr "Behalten"
-
-msgid "Yes"
-msgstr "Ja"
-
-msgid "No"
-msgstr ""
-
-msgid "Restore"
-msgstr "Wiederherstellen"
-
-msgid "Delete"
-msgstr "Löschen"
-
-msgid "No remote backups found."
-msgstr "Keine Backups gefunden."
-
-msgid ""
-"Cloud backups allow you to store the router's configuration on a remote "
-"server."
-msgstr ""
-"Cloud-Backups ermöglichen Ihnen, die Konfiguration des Routers auf einem "
-"Server zu speichern."
-
-msgid ""
-"The password you set is submitted every time a backup is used. The password "
-"isn't stored anywhere and it is not renewable, so in case of a forgotten "
-"password, you will not be able access backups and will have to delete and "
-"reinstall the package. "
-msgstr ""
-"Das von Ihnen festgelegte Passwort wird jedes Mal, wenn ein Backup verwendet "
-"wird, verlangt. Das Passwort wird nirgendwo gespeichert und ist nicht "
-"erneuerbar. Im Falle eines vergessenen Passworts können Sie nicht auf die "
-"Backups zugreifen und müssen das Paket löschen und neu installieren. "
-
-msgid "In order to create remote backups, you first need to set the password."
-msgstr "Um Backups zu erstellen, müssen Sie zunächst das Passwort festlegen."
-
-msgid "Set password"
-msgstr "Passwort setzen"
-
-msgid ""
-"Cloud backups are created automatically every night as well as manually. The "
-"service stores up to seven backups, additional backups are gradually "
-"overwritten unless the user selects Keep. Once the backup is kept, it will "
-"remain stored on a remote server until deleted. "
-msgstr ""
-"Cloud Backups werden manuell als auch automatisch jede Nacht erstellt. Der "
-"Service speichert bis zu sieben Backups, zusätzliche Backups werden nach und "
-"nach überschrieben, sofern der Benutzer nicht \"Behalten\" wählt. Sobald ein "
-"Backup behalten wird, bleibt er auf einem Server gespeichert, bis er wieder "
-"manuell gelösch wird. "
-
-#, python-format
-msgid ""
-"To be able to use cloud backups, please make sure that you are registered at "
-"the <a href='%(project_url)s'>Project Turris portal</a>. You can do that on "
-"the <a href='%(data_collect_url)s'>Data Collect tab</a>. "
-msgstr ""
-"Um Cloud Backups nützen zu können, müssen Sie auf dem <a "
-"href='%(project_url)s'>Project Turris Portal</a> registriert sein. "
-"Registrieren können sich unter dem Tab <a "
-"href='%(data_collect_url)s'>Datensammlung</a>. "
-
-msgid ""
-"Note that you don't need to enable data collection after the registration."
-msgstr ""
-
-msgid "Remote backups"
-msgstr "Backups"
-
-msgid "Create"
-msgstr "Erstellen"
 
 msgid "Loading backup list..."
 msgstr "Backup-Liste wird geladen..."
@@ -164,3 +84,85 @@ msgstr ""
 
 msgid "The password to encrypt the backup is not set, although it is required."
 msgstr ""
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Keep"
+msgstr "Behalten"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr ""
+
+msgid "Restore"
+msgstr "Wiederherstellen"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "No remote backups found."
+msgstr "Keine Backups gefunden."
+
+msgid ""
+"Cloud backups allow you to store the router's configuration on a remote "
+"server."
+msgstr ""
+"Cloud-Backups ermöglichen Ihnen, die Konfiguration des Routers auf einem "
+"Server zu speichern."
+
+msgid ""
+"The password you set is submitted every time a backup is used. The "
+"password isn't stored anywhere and it is not renewable, so in case of a "
+"forgotten password, you will not be able access backups and will have to "
+"delete and reinstall the package. "
+msgstr ""
+"Das von Ihnen festgelegte Passwort wird jedes Mal, wenn ein Backup "
+"verwendet wird, verlangt. Das Passwort wird nirgendwo gespeichert und ist"
+" nicht erneuerbar. Im Falle eines vergessenen Passworts können Sie nicht "
+"auf die Backups zugreifen und müssen das Paket löschen und neu "
+"installieren. "
+
+msgid "In order to create remote backups, you first need to set the password."
+msgstr "Um Backups zu erstellen, müssen Sie zunächst das Passwort festlegen."
+
+msgid "Set password"
+msgstr "Passwort setzen"
+
+msgid ""
+"Cloud backups are created automatically every night as well as manually. "
+"The service stores up to seven backups, additional backups are gradually "
+"overwritten unless the user selects Keep. Once the backup is kept, it "
+"will remain stored on a remote server until deleted. "
+msgstr ""
+"Cloud Backups werden manuell als auch automatisch jede Nacht erstellt. "
+"Der Service speichert bis zu sieben Backups, zusätzliche Backups werden "
+"nach und nach überschrieben, sofern der Benutzer nicht \"Behalten\" "
+"wählt. Sobald ein Backup behalten wird, bleibt er auf einem Server "
+"gespeichert, bis er wieder manuell gelösch wird. "
+
+#, fuzzy, python-format
+msgid ""
+"To be able to use cloud backups, please make sure that you are registered"
+" at the <a href='%(project_url)s'>Project Turris portal</a>. You can do "
+"that on the <a href='%(data_collect_url)s'>Data Collect tab</a>."
+msgstr ""
+"Um Cloud Backups nützen zu können, müssen Sie auf dem <a "
+"href='%(project_url)s'>Project Turris Portal</a> registriert sein. "
+"Registrieren können sich unter dem Tab <a "
+"href='%(data_collect_url)s'>Datensammlung</a>. "
+
+msgid "Note that you don't need to enable data collection after the registration."
+msgstr ""
+
+msgid "Remote backups"
+msgstr "Backups"
+
+msgid "Create"
+msgstr "Erstellen"
+

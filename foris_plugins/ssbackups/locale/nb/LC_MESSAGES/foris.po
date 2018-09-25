@@ -1,23 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the Foris SSbackups package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) 2018 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Foris SSbackups
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Foris SSbackups\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 14:16+0200\n"
+"POT-Creation-Date: 2018-09-25 17:02+0200\n"
 "PO-Revision-Date: 2018-06-20 14:41+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
-"foris-serversidebackups-plugin/nb/>\n"
 "Language: nb\n"
+"Language-Team: Norwegian Bokmål "
+"<https://hosted.weblate.org/projects/turris/foris-serversidebackups-"
+"plugin/nb/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"Generated-By: Babel 2.6.0\n"
 
 msgid "Creating an automatic Cloud Backup from your router failed."
 msgstr "Opprettelse av automatisk skysikkerhetskopi fra din ruter mislyktes."
@@ -33,90 +35,6 @@ msgstr "Passord (gjenta)"
 
 msgid "Passwords are not equal."
 msgstr "Passordene samsvarer ikke."
-
-msgid "Name"
-msgstr "Navn"
-
-msgid "Date"
-msgstr "Dato"
-
-msgid "Keep"
-msgstr "Behold"
-
-msgid "Yes"
-msgstr "Ja"
-
-msgid "No"
-msgstr "Nei"
-
-msgid "Restore"
-msgstr "Gjenopprett"
-
-msgid "Delete"
-msgstr "Slett"
-
-#, fuzzy
-msgid "No remote backups found."
-msgstr "Fant ikke noen sikkerhetskopier annensteds hen."
-
-msgid ""
-"Cloud backups allow you to store the router's configuration on a remote "
-"server."
-msgstr ""
-"Skysikkerhetskopier lar deg lagre ruterens oppsett på en tjener annensteds "
-"hen."
-
-msgid ""
-"The password you set is submitted every time a backup is used. The password "
-"isn't stored anywhere and it is not renewable, so in case of a forgotten "
-"password, you will not be able access backups and will have to delete and "
-"reinstall the package. "
-msgstr ""
-"Passordet du setter sendes inn hver gang en sikkerhetskopi brukes. Passordet "
-"lagres ikke noen steder, og er ikke fornybart, så i fall det glemmes, vil du "
-"ikke kunne få tilgang til sikkerhetskopier, og må slette og reinstallere "
-"pakken. "
-
-msgid "In order to create remote backups, you first need to set the password."
-msgstr ""
-"For å kunne opprette sikkerhetskopier annensteds hen, må du først sette "
-"passordet."
-
-msgid "Set password"
-msgstr "Sett passord"
-
-#, fuzzy
-msgid ""
-"Cloud backups are created automatically every night as well as manually. The "
-"service stores up to seven backups, additional backups are gradually "
-"overwritten unless the user selects Keep. Once the backup is kept, it will "
-"remain stored on a remote server until deleted. "
-msgstr ""
-"Skysikkerhetskopier opprettes automatisk hver natt såvel som manuelt. "
-"Tjenesten lagrer opptil syv sikkerhetskopier, og ytterligere "
-"sikkerhetskopier overskrives gradvis om ikke brukeren velger \"Behold\". Når "
-"sikkerhetskopien beholdes, vil den forbli lagret på tjeneren annensteds hen "
-"til den slettes. "
-
-#, fuzzy, python-format
-msgid ""
-"To be able to use cloud backups, please make sure that you are registered at "
-"the <a href='%(project_url)s'>Project Turris portal</a>. You can do that on "
-"the <a href='%(data_collect_url)s'>Data Collect tab</a>. "
-msgstr ""
-"For å kunne bruke skysikkerhetskopier, forsikre deg om at du har registrert "
-"deg på <a href='%(project_url)s'>Turris-prosjektportalen</a>. Du kan gjøre "
-"det fra <a href='%(data_collect_url)s'>Datainnhentingsfanen</a>. "
-
-msgid ""
-"Note that you don't need to enable data collection after the registration."
-msgstr "Merk at du ikke trenger å skru på datainnsamling etter registreringen."
-
-msgid "Remote backups"
-msgstr "Sikkerhetskopier annensteds hen"
-
-msgid "Create"
-msgstr "Opprett"
 
 #, fuzzy
 msgid "Loading backup list..."
@@ -164,8 +82,8 @@ msgstr "Sikkerhetskopi gjenopprettet."
 #, fuzzy
 msgid "Failed to decrypt the backup. You probably inserted a wrong password."
 msgstr ""
-"Klarte ikke å dekryptere sikkerhetskopi. Du har antagelig skrevet inn galt "
-"passord."
+"Klarte ikke å dekryptere sikkerhetskopi. Du har antagelig skrevet inn "
+"galt passord."
 
 #, fuzzy
 msgid "Failed to restore the backup."
@@ -173,9 +91,95 @@ msgstr "Klarte ikke å gjenopprette sikkerhetskopi."
 
 msgid "Failed to create backup because of max file size reached."
 msgstr ""
-"Klarte ikke å opprette sikkerhetskopi fordi maksimal filstørrelse ble nådd."
+"Klarte ikke å opprette sikkerhetskopi fordi maksimal filstørrelse ble "
+"nådd."
 
 msgid "The password to encrypt the backup is not set, although it is required."
 msgstr ""
-"Passordet for å kryptere denne sikkerhetskopien er ikke satt, selv om det "
-"kreves."
+"Passordet for å kryptere denne sikkerhetskopien er ikke satt, selv om det"
+" kreves."
+
+msgid "Name"
+msgstr "Navn"
+
+msgid "Date"
+msgstr "Dato"
+
+msgid "Keep"
+msgstr "Behold"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nei"
+
+msgid "Restore"
+msgstr "Gjenopprett"
+
+msgid "Delete"
+msgstr "Slett"
+
+#, fuzzy
+msgid "No remote backups found."
+msgstr "Fant ikke noen sikkerhetskopier annensteds hen."
+
+msgid ""
+"Cloud backups allow you to store the router's configuration on a remote "
+"server."
+msgstr ""
+"Skysikkerhetskopier lar deg lagre ruterens oppsett på en tjener "
+"annensteds hen."
+
+msgid ""
+"The password you set is submitted every time a backup is used. The "
+"password isn't stored anywhere and it is not renewable, so in case of a "
+"forgotten password, you will not be able access backups and will have to "
+"delete and reinstall the package. "
+msgstr ""
+"Passordet du setter sendes inn hver gang en sikkerhetskopi brukes. "
+"Passordet lagres ikke noen steder, og er ikke fornybart, så i fall det "
+"glemmes, vil du ikke kunne få tilgang til sikkerhetskopier, og må slette "
+"og reinstallere pakken. "
+
+msgid "In order to create remote backups, you first need to set the password."
+msgstr ""
+"For å kunne opprette sikkerhetskopier annensteds hen, må du først sette "
+"passordet."
+
+msgid "Set password"
+msgstr "Sett passord"
+
+#, fuzzy
+msgid ""
+"Cloud backups are created automatically every night as well as manually. "
+"The service stores up to seven backups, additional backups are gradually "
+"overwritten unless the user selects Keep. Once the backup is kept, it "
+"will remain stored on a remote server until deleted. "
+msgstr ""
+"Skysikkerhetskopier opprettes automatisk hver natt såvel som manuelt. "
+"Tjenesten lagrer opptil syv sikkerhetskopier, og ytterligere "
+"sikkerhetskopier overskrives gradvis om ikke brukeren velger \"Behold\". "
+"Når sikkerhetskopien beholdes, vil den forbli lagret på tjeneren "
+"annensteds hen til den slettes. "
+
+#, fuzzy, python-format
+msgid ""
+"To be able to use cloud backups, please make sure that you are registered"
+" at the <a href='%(project_url)s'>Project Turris portal</a>. You can do "
+"that on the <a href='%(data_collect_url)s'>Data Collect tab</a>."
+msgstr ""
+"For å kunne bruke skysikkerhetskopier, forsikre deg om at du har "
+"registrert deg på <a href='%(project_url)s'>Turris-prosjektportalen</a>. "
+"Du kan gjøre det fra <a "
+"href='%(data_collect_url)s'>Datainnhentingsfanen</a>. "
+
+msgid "Note that you don't need to enable data collection after the registration."
+msgstr "Merk at du ikke trenger å skru på datainnsamling etter registreringen."
+
+msgid "Remote backups"
+msgstr "Sikkerhetskopier annensteds hen"
+
+msgid "Create"
+msgstr "Opprett"
+
