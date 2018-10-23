@@ -1,19 +1,19 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the Foris SSbackups
-# package.
+# Translations template for Foris SSBackups Plugin.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the Foris SSBackups
+# Plugin project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Foris SSbackups\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: Foris SSBackups Plugin 8.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-09-25 17:02+0200\n"
 "PO-Revision-Date: 2018-10-16 03:34+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
-"foris-serversidebackups-plugin/nb/>\n"
-"Language: nb\n"
+"foris-serversidebackups-plugin/nb_NO/>\n"
+"Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,20 +31,22 @@ msgid "Password"
 msgstr "Passord"
 
 msgid "Password (repeat)"
-msgstr "Passord (gjenta)"
+msgstr "Gjenta passord"
 
 msgid "Passwords are not equal."
 msgstr "Passordene samsvarer ikke."
 
 #, fuzzy
 msgid "Loading backup list..."
-msgstr "Laster opp sikkerhetskopiliste…"
+msgstr "Laster inn sikkerhetskopiliste…"
 
+#, fuzzy
 msgid "Failed to download the list of  backups."
-msgstr "Klarte ikke å laste ned liste over sikkerhetskopier."
+msgstr "Klarte ikke å laste ned sikkerhetskopiliste"
 
+#, fuzzy
 msgid "A backup was successfully created."
-msgstr "En sikkerhetskopi ble opprettet."
+msgstr "Sikkerhetskopi opprettet."
 
 msgid "Failed to encrypt the backup."
 msgstr "Klarte ikke å kryptere sikkerhetskopien."
@@ -53,51 +55,46 @@ msgstr "Klarte ikke å kryptere sikkerhetskopien."
 msgid "Failed to connect to the ssbackup server."
 msgstr "Klarte ikke å koble til sikkerhetskopitjeneren."
 
-#, fuzzy
 msgid "Failed to create a backup."
 msgstr "Klarte ikke å opprette sikkerhetskopi."
 
-#, fuzzy
 msgid "The backup was successfully deleted."
 msgstr "Sikkerhetskopi slettet."
 
 msgid "The backup was not found."
 msgstr "Fant ikke sikkerhetskopien."
 
-#, fuzzy
 msgid "Failed to delete the backup."
-msgstr "Klarte ikke å slette sikkerhetskopi."
-
-msgid "The backup was successfully marked to keep."
-msgstr "Sikkerhetskopien ble markert for bevaring."
+msgstr "Klarte ikke å slette sikkerhetskopien."
 
 #, fuzzy
+msgid "The backup was successfully marked to keep."
+msgstr "Sikkerhetskopien ble merket for fortsatt lagring."
+
 msgid "Failed to keep the backup."
-msgstr "Klarte ikke å beholde sikkerhetskopi."
+msgstr "Klarte ikke å beholde sikkerhetskopien."
 
 #, fuzzy
 msgid "The backup was successfully restored."
-msgstr "Sikkerhetskopi gjenopprettet."
+msgstr "Sikkerhetskopien ble gjenopprettet."
 
-#, fuzzy
 msgid "Failed to decrypt the backup. You probably inserted a wrong password."
 msgstr ""
-"Klarte ikke å dekryptere sikkerhetskopi. Du har antagelig skrevet inn "
-"galt passord."
+"Klarte ikke å dekryptere sikkerhetskopi. Du har antagelig oppgitt feil "
+"passord."
 
-#, fuzzy
 msgid "Failed to restore the backup."
 msgstr "Klarte ikke å gjenopprette sikkerhetskopi."
 
 msgid "Failed to create backup because of max file size reached."
 msgstr ""
-"Klarte ikke å opprette sikkerhetskopi fordi maksimal filstørrelse ble "
-"nådd."
+"Klarte ikke å opprette sikkerhetskopi som følge av overskridelse av "
+"maksimalt filstørrelse."
 
 msgid "The password to encrypt the backup is not set, although it is required."
 msgstr ""
-"Passordet for å kryptere denne sikkerhetskopien er ikke satt, selv om det"
-" kreves."
+"Passordet for kryptering av sikkerhetskopien er ikke satt, selv om det er "
+"påkrevd."
 
 msgid "Name"
 msgstr "Navn"
@@ -120,31 +117,31 @@ msgstr "Gjenopprett"
 msgid "Delete"
 msgstr "Slett"
 
-#, fuzzy
 msgid "No remote backups found."
-msgstr "Fant ikke noen sikkerhetskopier annensteds hen."
+msgstr "Fant ingen sikkerhetskopier annensteds hen."
 
 msgid ""
 "Cloud backups allow you to store the router's configuration on a remote "
 "server."
 msgstr ""
-"Skysikkerhetskopier lar deg lagre ruterens oppsett på en tjener "
-"annensteds hen."
+"Skysikkerhetskopier lar deg lagre ruterens oppsett på en tjener annensteds "
+"hen."
 
+#, fuzzy
 msgid ""
 "The password you set is submitted every time a backup is used. The "
 "password isn't stored anywhere and it is not renewable, so in case of a "
 "forgotten password, you will not be able access backups and will have to "
 "delete and reinstall the package. "
 msgstr ""
-"Passordet du setter sendes inn hver gang en sikkerhetskopi brukes. "
-"Passordet lagres ikke noen steder, og er ikke fornybart, så i fall det "
-"glemmes, vil du ikke kunne få tilgang til sikkerhetskopier, og må slette "
-"og reinstallere pakken. "
+"Passordet du setter sendes inn hver gang en sikkerhetskopi brukes. Passordet "
+"lagres ikke noensteds hen, og er ikke fornybart. I fall det glemmes, vil du "
+"ikke kunne ha tilgang til sikkerhetskopier, og må slette og reinstallere "
+"pakken. "
 
 msgid "In order to create remote backups, you first need to set the password."
 msgstr ""
-"For å kunne opprette sikkerhetskopier annensteds hen, må du først sette "
+"For å kunne oppprette sikkerhetskopier annensteds hen, må du først sette "
 "passordet."
 
 msgid "Set password"
@@ -159,11 +156,11 @@ msgid ""
 msgstr ""
 "Skysikkerhetskopier opprettes automatisk hver natt såvel som manuelt. "
 "Tjenesten lagrer opptil syv sikkerhetskopier, og ytterligere "
-"sikkerhetskopier overskrives gradvis om ikke brukeren velger \"Behold\". "
-"Når sikkerhetskopien beholdes, vil den forbli lagret på tjeneren "
-"annensteds hen til den slettes. "
+"sikkerhetskopier overskrives gradvis om ikke brukeren velger \"Behold\". Når "
+"sikkerhetskopien beholdes, vil den forbli lagret på tjeneren annensteds hen "
+"til den slettes. "
 
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "To be able to use cloud backups, please make sure that you are registered"
 " at the <a href='%(project_url)s'>Project Turris portal</a>. You can do "
