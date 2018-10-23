@@ -20,7 +20,7 @@ class BuildCmd(build_py):
 
 setup(
     name="Foris SSBackups Plugin",
-    version="8.2",
+    version="8.3",
     description="SSBackups plugin for foris web interfce",
     author="CZ.NIC, z. s. p. o.",
     author_email="stepan.henek@nic.cz",
