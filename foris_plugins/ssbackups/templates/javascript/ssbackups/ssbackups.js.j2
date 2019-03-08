@@ -260,7 +260,7 @@ Foris.overrideDownloadAndRestore = function () {
     });
 };
 
-Foris.WS["ssbackups"] = function(msg) {
+Foris.addWsHanlder("ssbackups", (msg) => {
     switch(msg["action"]) {
       case "delete":
         Foris.download_backups([], [], [msg.data.id]);
@@ -275,7 +275,7 @@ Foris.WS["ssbackups"] = function(msg) {
         // TODO highlight restored backup somehow...
         break;
     }
-};
+});
 
 $(document).ready(function() {
   Foris.download_backups([], [], []);
